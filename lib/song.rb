@@ -6,7 +6,11 @@ class Song
   end
 
   def artist_name
-      self.artist.name
+      if self.artist.method_defined? :name
+        self.artist_name
+      else
+        nil
+      end
   end
 
 end
