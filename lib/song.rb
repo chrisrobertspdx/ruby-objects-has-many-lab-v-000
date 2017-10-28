@@ -6,7 +6,7 @@ class Song
   end
 
   def artist_name
-    if self.methods.include?("artist")
+    if self.instance_methods.include?(:artist)
       self.artist.name
     else
       nil
