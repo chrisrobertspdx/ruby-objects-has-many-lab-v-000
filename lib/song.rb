@@ -6,11 +6,9 @@ class Song
   end
 
   def artist_name
-      if self.include?(:artist)
+
         self.artist.name
-      else
-        nil
-      end
+
   end
 
 end
